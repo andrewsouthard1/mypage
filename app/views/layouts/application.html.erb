@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mypage</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://use.fontawesome.com/6451d784c3.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+
+  <div id="footer">
+    <a onclick="showBio()">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      Bio
+    </a>
+    <a onclick="showProjects()">
+      <i class="fa fa-suitcase" aria-hidden="true"></i>
+      Projects
+    </a>
+    <a onclick="showBlog()">
+    <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+      Blog
+    </a>
+    <a onclick="showContact()">
+    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+    Contact</a>
+  </div>
+</html>
